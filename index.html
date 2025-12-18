@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEBPROG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="welcome.js" defer></script>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #dedede;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #1a1a1a;
+            font-size: 24px;
+        }
+
+        header button {
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        header button:hover {
+            background-color: #0056b3;
+        }
+
+        .welcome-container {
+            flex: 1;
+            text-align: center;
+            background-color: #dedede;
+            color: black;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 1000px;
+            width: 90%;
+            margin: 30px auto;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .lab-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .lab-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .lab-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            width: 180px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .lab-card h2 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            color: black;
+        }
+
+        .lab-card p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+            color: black;
+        }
+
+        .lab-card button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .lab-card button:hover {
+            background-color: #0056b3;
+        }
+
+        #footer {
+            background-color: #dedede;
+            color: black;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid #e0e0e0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        .dark-mode header {
+            background-color: #3a3a3a;
+            color: #f0f0f0;
+        }
+        .dark-mode header h2 {
+            background-color: #3a3a3a;
+            color: #f0f0f0;
+        }
+        .dark-mode .welcome-container {
+            background-color: #2a2a2a;
+            color: #f0f0f0;
+        }
+
+        .dark-mode .lab-card {
+            background-color: #3a3a3a;
+            color: #f0f0f0;
+        }
+
+        .dark-mode #footer {
+            background-color: #2a2a2a;
+            color: #f0f0f0;
+        }
+
+        .dark-mode .lab-card h2 {
+            color: #f0f0f0;
+        }
+
+        .dark-mode .lab-card p {
+            color: #f0f0f0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .lab-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>WEBPROG</h2>
+        <button id="themeBtn">Dark Mode</button>
+    </header>
+
+    <div class="welcome-container">
+        <h1>Welcome to Web Programming</h1>
+
+        <div class="lab-cards">
+            <div class="lab-card">
+                <h2>Lab 1</h2>
+                <p>HTML</p>
+                <button onclick="location.href='regalia_lab1.html'">View</button>
+            </div>
+            <div class="lab-card">
+                <h2>Lab 2</h2>
+                <p>HTML + CSS</p>
+                <button onclick="location.href='regalia_lab2.html'">View</button>
+            </div>
+            <div class="lab-card">
+                <h2>Lab 3</h2>
+                <p>HTML + CSS + JS</p>
+                <button onclick="location.href='regalia_lab3.html'">View</button>
+            </div>
+            <div class="lab-card">
+                <h2>Lab 4</h2>
+                <p>GitHub</p>
+                <button onclick="location.href='regalia_lab4.html'">View</button>
+            </div>
+        </div>
+
+        <p style="margin-top: 30px;">Click "View" to open!</p>
+    </div>
+
+    <div id="footer">
+        <p><strong>WebProg - Web Programming 2025</strong></p>
+    </div>
+
+</body>
+</html>

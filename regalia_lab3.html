@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEBPROG-Lab3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>
+            <a href="index.html">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#message">Message Me</a>
+            <button id="themeBtn">Dark Mode</button>
+        </h2>
+    </header>
+
+    <section id="main-content">
+        <div class="left-column">
+            <img id="profileImg" src="profile.jpg" alt="Profile Image" class="profile-img">
+            <button id="changeImgBtn">Change Profile Photo</button>
+
+            <h2>Kent Romar A. Regalia</h2>
+            <span class="job-title">IT Student</span>
+            <button id="editJobBtn">Edit Job Title</button>
+
+            <div class="section-box">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:kentromar123@gmail.com">kentromar123@gmail.com</a></p>
+            </div>
+
+            <button id="toggleSkillsBtn">Hide Skills</button>
+            <div id="skillsSection">
+                <div class="section-box">
+                    <h3>Skills</h3>
+                    <dl>
+                        <dt>Frontend</dt>
+                        <dd>HTML</dd>
+                        <dd>CSS</dd>
+                        <dd>JavaScript</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div id="about">
+                <h2>About Me</h2>
+                <p>Hello! My name is Kent Romar A. Regalia.</p>
+                <p>I am an IT Student with a passion for learning new programming languages.</p>
+                <p>I am always eager to improve myself both personally and professionally.</p>
+                <p> My goal is to develop meaningful projects that make a difference while continuing to grow and learn every day.</p>
+            </div>
+
+            <hr>
+
+            <section id="message">
+                <h2>Message Me</h2>
+                <p id="timeGreeting"></p>
+                <form id="messageForm">
+                    <p id="greeting"></p>
+                    <input type="text" id="name" placeholder="Your Name">
+
+                    <input type="email" id="email" placeholder="Your Email">
+
+                    <textarea id="messageText" rows="5" maxlength="200" placeholder="Your Message"></textarea>
+                    <p>Characters left: <span id="counter">200</span></p>
+
+                    <button type="submit">Send Message</button>
+                    <p id="form-status"></p>
+                </form>
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p><strong>WebProg - Web Programming 2025</strong></p>
+        <p id="dateDisplay"></p>
+    </div>
+
+</body>
+</html>
